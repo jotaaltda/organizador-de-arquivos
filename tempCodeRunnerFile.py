@@ -1,5 +1,3 @@
-import time
-
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
@@ -13,6 +11,3 @@ monitor = monitora_arquivos()
 observador.schedule(monitor, r'C:\Users\jotap\OneDrive\Área de Trabalho\Arquivos', recursive=False)
         
 observador.start()
-
-while True:
-    time.sleep(1)
